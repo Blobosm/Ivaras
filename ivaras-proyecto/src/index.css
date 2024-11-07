@@ -1,0 +1,448 @@
+/* Ajustes generales */
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Inicio css navbar */
+.navbar-logo {
+  height: auto;
+  width: 78px;
+  margin-left: -100px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.row.g-0 {
+  margin: 0;
+}
+
+.navbar-link:hover {
+  color: #b3b3b3;
+}
+
+.navbar {
+  padding-left: 0;
+  /* Elimina el padding izquierdo de la barra */
+}
+
+.navbar-nav {
+  gap: 20px;
+  /* Ajusta el espacio entre los enlaces del menú */
+}
+/* Fin css navbar */
+
+/* inicio css landingpage */
+section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.col-md-8 {
+  padding: 0;
+}
+
+
+.main-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; /* Ajusta la altura si es necesario */
+  display: flex;
+  align-items: stretch;
+}
+
+.content-container {
+  position: relative;
+  z-index: 1; /* Asegura que el contenido esté encima de la imagen de fondo */
+  padding: 20px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40; 
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6; /* Ajusta la opacidad */
+  z-index: -1;
+}
+
+.container-fluid {
+  display: flex;
+  padding: 0;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  background-image: url('../public/hola.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  min-height: 80vh; /* Ajusta la altura según necesites */
+  padding: 0; /* Elimina cualquier padding extra */
+  
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+}
+
+.hero-section {
+  flex: 3; /* Ajusta el tamaño para darle más espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0; /* Asegura que esté alineado sin espacio extra */
+}
+
+.hero-link {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-text {
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin: 0;
+}
+
+.hero-text button {
+  margin-top: 10px;
+}
+
+.citt-image {
+  background-image: url('../public/logo_citt.jpg'); 
+}
+
+.ivaras-lab-image {
+  background-image: url('../public/logo_citt.jpg');
+}
+
+.ivaras-proyectos-image {
+  background-image: url('../public/logo_citt.jpg');
+}
+
+.info-panel {
+  display: flex;
+  width: 330%;
+  height: 140px; /* Aumenta la altura si necesitas más espacio */
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden; /* Asegura que el contenido no se salga */
+}
+.info-panels-container {
+  padding: 10px;
+}
+
+.panel-image {
+  width: 30%; /* Ajusta el ancho de la imagen para equilibrar con el rectángulo negro */
+  height: 100%; 
+  background-size: cover;
+  background-position: center;
+}
+
+.panel-content {
+  width: 70%; /* Aumenta el ancho del rectángulo negro */
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+
+.panel-content button {
+  align-self: flex-start;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 5px 10px; /* Ajusta el padding para reducir el tamaño del botón */
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+
+.panel-content button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.panel-title {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px; /* Añade espacio debajo del título */
+}
+/* Fin css landingpage */
+
+/* Inicio css AboutUs "Quienes somos" */
+.about-us-container {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-section { 
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.about-us-video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+}
+.about-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.about-button:hover {
+  background-color: #444;
+  transform: scale(1.05);
+}
+.about-us {
+  text-align: center;
+  margin: 20px;
+}
+.about-us h2 {
+  margin-bottom: 20px;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.video-container iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+/* fin css AboutUs "Quienes somos" */
+
+/* Estilo de la sección del acordeón */
+.acordeon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.accordion-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.accordion-item {
+  width: 30%;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1A1A1A;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.acordeon-header h4 {
+  margin: 0;
+}
+.accordion-header span {
+  margin-left: 5px;
+}
+
+.accordion-content {
+  background-color: whitesmoke;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+  animation: slideDown 0.3s ease;
+}
+.accordion-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.accordion-icon {
+  font-size: 1.2rem;
+}
+
+.collapse {
+  transition: height 0.3s ease;
+}
+
+/* fin estilo acordeon */
+
+/*Incio  */
+.col-md-4 {
+  flex: 1;
+  max-width: 200px;
+  margin: 0 10px;
+}
+
+.card-header {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-header h4 {
+  margin: 0;
+  color: white;
+  font-weight: normal;
+  background-color: black;
+  padding: 10px 20px; /* Ajusta el tamaño del fondo negro */
+  border-radius: 5px;
+}
+
+.plus-icon {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+} 
+/* Fin  */
+
+/* Inicio Ideas y team Ivaras */
+.jumbotron.carreras-por-escuela {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.wrapper-on-top-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.descripcion {
+  padding: 20px;
+  max-width: 300px;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.icon-chevron-right {
+  margin-left: 8px;
+  width: 20px;
+  height: 20px;
+ 
+  background-size: contain;
+}
+
+.img-object-fit {
+  width: 100%;
+  height: 720px;
+  object-fit: cover;
+}
+
+
+
+/* Fin Ideas y team Ivaras */
+
+
